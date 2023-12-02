@@ -195,8 +195,6 @@ export async function handler(chatUpdate) {
         }
         if (opts["nyimak"])
             return
-        if (!m.fromMe && opts["self"])
-            return
         if (opts["pconly"] && m.chat.endsWith("g.us"))
             return
         if (opts["gconly"] && !m.chat.endsWith("g.us"))
@@ -221,7 +219,10 @@ export async function handler(chatUpdate) {
                 await delay(time)
             }, time)
         }
+         if (process.env.MODE && process.env.MODE.toLowerCase() === 'private' && !(isROwner || isOwner))
+          return;
 
+        
         if (m.isBaileys)
             return
         m.exp += Math.ceil(Math.random() * 10)
@@ -503,8 +504,10 @@ export async function handler(chatUpdate) {
         } catch (e) {
             console.log(m, m.quoted, e)
         }
-        if (opts["autoread"])
-            await this.chatRead(m.key).catch(() => {})
+        if (process.env.autoRead)
+            await conn.readMessages([m.key])
+        if (process.env.statusview && m.key.remoteJid === 'status@broadcast') 
+            await conn.readMessages([m.key])
     }
 }
 
