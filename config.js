@@ -16,7 +16,7 @@ global.owner = [
 
 global.mods = ['255677949997','255683133999'] 
 global.prems = ['255677949997', '255683133999', '']
-global.allowed = ['255683133999', '', '']
+global.allowed = ['', '', '']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c71a2fb', '5bd33b276d41d6b4', 'HIRO', 'kurrxd09', 'ebb6251cc00f9c63']
@@ -52,11 +52,11 @@ global.APIKeys = { // APIKey Here
 // Sticker WM
 global.botname = '*✞JERuSaLEm✞*⚡'
 global.premium = 'true'
-global.packname = 'https://www.instagram.com/airbrainiac' 
+global.packname = '🔥follow me on instagram @itsboysule' 
 global.author = '@Airbrainiac' 
 global.menuvid = 'https://i.imgur.com/AjDzGgG.mp4'
 global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/airbrainiac\n' 
-global.dygp = 'https://chat.whatsapp.com/BFfD1C0mTDDDfVdKPkxRAA'
+global.dygp = 't.me/techmaniactz'
 global.fgsc = 'https://github.com/airbrainiac/GURU-BOT' 
 global.fgyt = 'https://youtube.com/'
 global.fgpyp = 'https://youtube.com/'
